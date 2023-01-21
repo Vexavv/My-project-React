@@ -1,0 +1,72 @@
+.Modal.active {
+  display: block;
+}
+
+.Modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vw;
+  overflow: auto;
+
+  &-content {
+    min-height: 100px;
+    width: 32%;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.52);
+    background-color: #E13429;
+    border-radius: 5px;
+    margin: 10% auto;
+
+
+  }
+
+  &-header {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    position: relative;
+
+    &__title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 26px;
+      color: white;
+      margin-left: 5px;
+
+    }
+
+    &__close {
+      color: white;
+      position: absolute;
+      top: 3px;
+      right: 10px;
+      font-size: 30px;
+      font-weight: lighter;
+      cursor: pointer;
+    }
+  }
+
+  &-main {
+
+    &__text {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 26px;
+      padding: 10px;
+      color: white;
+      text-align: center;
+
+    }
+  }
+  &-footer{
+    text-align: center;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,19 @@
+.Counter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+min-width: 120px;
+  &-num{
+    font-size: 20px;
+
+  }
+  &-icon{
+    width: 20px;
+    height: 20px;
+    fill: gold;
+    cursor: pointer;
+  }
+  &-icon:hover{
+    fill: cadetblue;
+  }
+}

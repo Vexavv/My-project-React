@@ -1,0 +1,72 @@
+[
+  {
+    "name": "RZTK",
+    "price": "100",
+    "img": "./img/1.jpg",
+    "article": "3456",
+    "color": "black"
+  },
+  {
+    "name": "RZTK 2",
+    "price": "500",
+    "img": "./img/2.jpg",
+    "article": "3358",
+    "color": "black"
+  },
+  {
+    "name": "RZTK 33",
+    "price": "700",
+    "img": "./img/3.jpg",
+    "article": "4567",
+    "color": "black"
+  },
+  {
+    "name": "RZTK 6",
+    "price": "360",
+    "img": "./img/4.jpg",
+    "article": "5623",
+    "color": "black"
+  },
+  {
+    "name": "RZTK 78",
+    "price": "250",
+    "img": "./img/5.jpg",
+    "article": "9876",
+    "color": "black"
+  },
+  {
+    "name": "RZTK 2234",
+    "price": "190",
+    "img": "./img/6.jpg",
+    "article": "1234",
+    "color": "blue"
+  },
+  {
+    "name": "RZTK 4567",
+    "price": "300",
+    "img": "./img/7.jpg",
+    "article": "6854",
+    "color": "black"
+  },
+  {
+    "name": "Ergo",
+    "price": "400",
+    "img": "./img/8.jpg",
+    "article": "9043",
+    "color": "black"
+  },
+  {
+    "name": "Trust",
+    "price": "350",
+    "img": "./img/9.jpg",
+    "article": "2312",
+    "color": "black"
+  },
+  {
+    "name": "Esperanza",
+    "price": "345",
+    "img": "./img/10.jpg",
+    "article": "6655",
+    "color": "brown"
+  }
+]
