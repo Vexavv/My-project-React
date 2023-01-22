@@ -3,23 +3,11 @@ import ContainerProduct from "../../components/ContainerProduct";
 import PropTypes from 'prop-types';
 
 
-function OurProduct({
-                        cards,
-                        addToCart,
-                        getCard,
-                        showModal,
-                        closeModal,
-                        activeModal,
-                        addToFavorites,
-                        removeFromFavorites,
-                        showButton
-                    }) {
+function OurProduct() {
 
     return (
         <div>
-            <ContainerProduct showButton={showButton} removeFromFavorites={removeFromFavorites}
-                              addToFavorites={addToFavorites} cards={cards} addToCart={addToCart} getCard={getCard}
-                              showModal={showModal} closeModal={closeModal} activeModal={activeModal}/>
+            <ContainerProduct />
         </div>
 
     );

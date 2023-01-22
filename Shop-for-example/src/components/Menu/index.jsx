@@ -7,6 +7,7 @@ function Menu(props) {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About Us</NavLink>
             <NavLink to="/product">Our Product</NavLink>
+            <NavLink to="/reviews">Reviews</NavLink>
         </div>
     );
 }

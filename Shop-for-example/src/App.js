@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import './App.scss';
 import {Routes, Route,} from "react-router-dom";
 import Layout from "./components/Layout";
@@ -9,6 +9,7 @@ import Cart from "./pages/Cart";
 import Favorites from "./pages/Favorites"
 import PageNotFound from "./pages/PageNotFound";
 import BuyProduct from "./pages/BuyProduct";
+import Reviews from "./pages/Reviews";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
                     <Route index element={<Home/>}/>
                     <Route path="about" element={<About/>}/>
                     <Route path="product" element={<OurProduct />}/>
+                    <Route path="reviews" element={<Reviews/>}/>
                     <Route path="cart" element={<Cart />}/>
                     <Route path="buy" element={<BuyProduct/>} />
                     <Route path="favorites" element={<Favorites />}/>
