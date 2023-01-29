@@ -11,14 +11,13 @@ import PageNotFound from "./pages/PageNotFound";
 import BuyProduct from "./pages/BuyProduct";
 import Reviews from "./pages/Reviews";
 
-
 function App() {
 
 
     return (
         <div className="App">
             <Routes>
-                <Route path="/" element={<Layout />}>
+                <Route path="/" element={<Layout/>}>
                     <Route index element={<Home/>}/>
                     <Route path="about" element={<About/>}/>
                     <Route path="product" element={<OurProduct />}/>

@@ -5,11 +5,11 @@ import Button from "../Button";
 import Modal from "../Modal"
 import {fetchAsyncProduct} from "../../store/productSlice";
 import {useSelector, useDispatch} from "react-redux";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import Loader from "../Loader"
 import Error from "../Error"
 import {closeModal} from "../../store/cardSlice";
-import{addToCart} from "../../store/cartSlice";
+import {addToCart} from "../../store/cartSlice";
 
 function ContainerProduct() {
 
@@ -21,11 +21,16 @@ function ContainerProduct() {
     const handlerCloseModal = () => {
         dispatch(closeModal())
     }
-  const  handlerCart = ()=>{
+    const handlerCart = () => {
         dispatch(addToCart())
-      dispatch(closeModal())
-  }
-
+        dispatch(closeModal())
+    }
+    //-------------------------------поиск-------------------------
+    const [value, setValue] = useState('')
+    const filterProduct = product.filter(item => {
+        return item.name.toLowerCase().includes(value.toLowerCase())
+    })
+//--------------------------------------------
 
     useEffect(() => {
         dispatch(fetchAsyncProduct())
@@ -51,9 +56,12 @@ function ContainerProduct() {
                            </div>}
                     />
                     <h1 className="Container-title">Our product</h1>
-
+                     {/*необходимо стилизировать инпут или взять из библиотеки*/}
+                    <input onChange={(e) => {
+                        setValue(e.target.value)
+                    }}/>
                     <ul className="Container-list">
-                        {product.map(item => {
+                        {filterProduct.map(item => {
                             return <Card key={item.article} item={item} {...item} />
                         })}
                     </ul>
@@ -63,7 +71,6 @@ function ContainerProduct() {
             return <Error error={status}/>
     }
 }
-
 
 
 ContainerProduct.defaultProps = {
