@@ -1,0 +1,89 @@
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+.Home {
+  background-image: url("../../../public/img/img-home/background-home.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &-title {
+    font-family: 'Ubuntu';
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    padding: 10% 0 ;
+    //padding-top: 10%;
+    //padding-bottom: 10%;
+  }
+  &-logo{
+    display: block;
+    margin: 0  auto 20px;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    //background-color: darkgrey;
+    background-image: url("../../../public/img/img-home/logo192.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    animation: Home-logo infinite 20s linear;
+
+  }
+  &-text{
+    font-family: 'Roboto Light';
+    font-size: 15px;
+    color: bisque;
+    padding-bottom: 20%;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+@media (min-width: 481px) {
+  .Home {
+    &-title {
+      font-size: 50px;
+    }
+    &-img{
+      max-width: 260px;
+      height: 260px;
+    }
+    &-text{
+      font-family: 'Roboto Light';
+      font-size: 18px;
+    }
+  }
+
+}
+@media (min-width: 900px) {
+  .Home {
+    &-title {
+      font-size: 100px;
+    }
+    &-img{
+      max-width: 320px;
+      height: 320px;
+    }
+    &-text{
+      font-family: 'Roboto Light';
+      font-size: 20px;
+      width: 30%;
+      padding-top: 10%;
+
+    }
+  }
+
+}
+
+@keyframes Home-logo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

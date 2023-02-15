@@ -1,0 +1,33 @@
+.Container{
+
+  &-title{
+margin: 15px;
+    color: white;
+  }
+&-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+}
+  &-module{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+}
+.Search{
+  display: inline-block;
+  margin: 10px auto;
+  width: 250px;
+}
+@media (max-width: 500px) {
+  .Container{
+    &-module{
+      flex-direction: row;
+    }
+  }
+}

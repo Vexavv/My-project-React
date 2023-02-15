@@ -12,13 +12,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Link, NavLink} from "react-router-dom";
 import {blueGrey} from '@mui/material/colors';
 import Button from "@mui/material/Button";
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import {useState} from "react";
+
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -62,7 +63,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 
 const pages = [<NavLink to="/">Home</NavLink>, <NavLink to="/about">About Us</NavLink>,
-    <NavLink to="/product">Our Product</NavLink>,<NavLink to="/reviews">Reviews</NavLink>];
+    <NavLink to="/product">Our Product</NavLink>,<NavLink to="/reviews">Reviews</NavLink>,<NavLink to="/example">Example</NavLink>];
 
 export default function PrimarySearchAppBar() {
 
@@ -70,6 +71,12 @@ export default function PrimarySearchAppBar() {
     const [anchorElNav, setAnchorElNav] = useState(null);
     const cart = useSelector(state => state.cart.cart)
     const favorites = useSelector(state => state.favorites.favorites)
+    const dispatch = useDispatch()
+
+
+    // const filterProduct = ()=>{
+    //     dispatch(searchProduct())
+    // }
 
     const handleMobileMenuClose = () => {
         setMobileMoreAnchorEl(null);
@@ -173,6 +180,7 @@ export default function PrimarySearchAppBar() {
                         <Button><NavLink to="/about">About Us</NavLink></Button>
                         <Button><NavLink to="/product">Our Product</NavLink></Button>
                         <Button><NavLink to="/reviews">Reviews</NavLink></Button>
+                        <Button><NavLink to="/example">Example</NavLink></Button>
                     </Box>
                     <Search>
                         <SearchIconWrapper>

@@ -10,7 +10,7 @@ export const fetchAsyncReviews = createAsyncThunk(
     'reviews/fetchAsyncReviews',
     async (_, {rejectWithValue}) => {
         try {
-            const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+            const response = await fetch(`https://jsonplaceholder.typicode.com/comments`);
             return await response.json();
 
         } catch (error) {

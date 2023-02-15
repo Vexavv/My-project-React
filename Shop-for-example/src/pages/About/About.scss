@@ -1,0 +1,15 @@
+
+.About{
+  background-image: url("../../../public/img/img-about/background-about.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+&-title{
+  color: red;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+}

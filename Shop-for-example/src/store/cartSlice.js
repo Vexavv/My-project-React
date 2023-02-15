@@ -17,8 +17,18 @@ const cartSlice = createSlice({
                 if (el.article === state.element.article)
                     isInArray = true
             })
+
             if (!isInArray)
                 state.cart.push(state.element)
+        },
+        incrementQuantity(state, action) {
+            const itemIndex = state.cart.findIndex(el => el.article === action.payload.article)
+           state.cart[itemIndex].qnt = Number.parseInt(state.cart[itemIndex].qnt) +1
+        },
+        decrementQuantity(state, action) {
+            const itemIndex = state.cart.findIndex(el => el.article === action.payload.article)
+             if (state.cart[itemIndex].qnt > 1)
+                state.cart[itemIndex].qnt -=  1
         },
         addToCartFromFavorites(state, action) {
             let isInArray = false
@@ -33,10 +43,18 @@ const cartSlice = createSlice({
             state.cart = state.cart.filter(el => el.article !== state.element.article)
         },
         cleaningCart(state, action) {
-            state.cart = state.cart.filter(el => el=== state.cart)
+            state.cart = state.cart.filter(el => el === state.cart)
         }
     }
 
 })
-export const {getElement, addToCart, addToCartFromFavorites, removeFromCart,cleaningCart} = cartSlice.actions
+export const {
+    getElement,
+    addToCart,
+    addToCartFromFavorites,
+    removeFromCart,
+    cleaningCart,
+    incrementQuantity,
+    decrementQuantity
+} = cartSlice.actions
 export default cartSlice.reducer;

@@ -1,0 +1,32 @@
+.Carousel {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+&-push{
+  fill: white;
+  margin: 0 10px;
+  width: 30%;
+  height: 30%;
+}
+  &-list{
+    list-style: none;
+    display: flex;
+    overflow: hidden;
+
+  }
+  &-item{
+    margin: 0 10px;
+  }
+  &-img{
+   max-width: 450px;
+    max-height: 450px;
+    width: 100%;
+  }
+  &-name{
+    color: white;
+    font-size: 50px;
+  }
+}

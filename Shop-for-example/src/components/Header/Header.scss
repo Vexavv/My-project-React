@@ -1,0 +1,45 @@
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.Menu{
+  display: inline-block;
+
+  a{
+    color: white;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 25px;
+  }
+  a:hover{
+    color: black;
+  }
+  &-mobile{
+    a{
+      color: black;
+      font-family: "Roboto";
+      font-weight: 500;
+      font-size: 15px;
+      text-decoration: none;
+
+    }
+  }
+}
+.active{
+  border-bottom: 1px solid black;
+}
+
+.Mobile{
+  a{
+    color: black;
+    font-family: "Arial Black";
+    font-size: 10px;
+    text-decoration: none;
+
+  }
+}

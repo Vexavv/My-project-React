@@ -1,0 +1,10 @@
+.List{
+  width: 50%;
+  margin: 0 auto;
+  list-style: none;
+  &-item{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+  }
+}

@@ -1,0 +1,193 @@
+.First {
+  &-title {
+    font-family: Roboto;
+    font-size: 18px;
+    color: aliceblue;
+    padding: 5px 0;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    &_img {
+      max-width: 450px;
+      width: 100%;
+    }
+
+    &_text {
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 22px;
+      color: aliceblue;
+    }
+  }
+}
+
+.Second {
+  background-color: darkgrey;
+
+  &-title {
+    font-family: Roboto;
+    font-size: 20px;
+    color: blue;
+    padding: 5px 0;
+  }
+
+  &-text {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    color: aliceblue;
+  }
+}
+
+.Third {
+  background-image:url("../../../public/img/img-about/about-img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: visible;
+  height: auto;
+
+  &-title {
+    font-family: Roboto;
+    font-size: 20px;
+    color: blue;
+    padding: 5px 0;
+  }
+
+  &-text {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    color: blue;
+  }
+}
+
+.Fourth {
+
+  &-title {
+    font-family: Roboto;
+    font-size: 20px;
+    color: white;
+    padding:10px 0;
+  }
+
+  &-text {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    color: aliceblue;
+  }
+}
+
+@media (min-width: 481px) {
+  .First {
+    &-title {
+      font-size: 22px;
+    }
+
+    &-container {
+      &_img {
+        max-width: 800px;
+      }
+
+      &_text {
+        font-size: 18px;
+      }
+    }
+  }
+  .Second {
+    background-color: cornflowerblue;
+    &-title {
+      font-size: 22px;
+      color: darkgrey;
+    }
+
+    &-text {
+      font-size: 18px;
+      color: darkgrey;
+    }
+  }
+  .Third {
+    background-color: aliceblue;
+    overflow: scroll;
+    height: 250px;
+
+    &-title {
+      font-size: 22px;
+    }
+
+    &-text {
+      font-family: Roboto;
+      font-size: 18px;
+      color: blue;
+    }
+  }
+  .Fourth {
+
+    &-title {
+
+    }
+
+    &-text {
+
+    }
+  }
+}
+@media (min-width: 900px) {
+  .First {
+    &-title {
+      font-size: 20px;
+    }
+
+    &-container {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+
+      &_img {
+        min-width: 600px;
+        width: 100%;
+        height: 700px;
+      }
+
+      &_text {
+ margin-left: 10px;
+        font-size: 18px;
+        text-align: left;
+      }
+    }
+  }
+  .Second {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+
+    &-title {
+      font-size: 22px;
+    }
+    &-text {
+      font-size: 18px;
+    }
+  }
+  .Third {
+    background-color: aliceblue;
+    overflow: scroll;
+    height: 250px;
+
+    &-title {
+      font-size: 25px;
+    }
+
+    &-text {
+      font-family: Roboto;
+      font-size: 22px;
+      line-height: 30px;
+      color: blue;
+    }
+  }
+
+}
